@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Hogwarts[] hogwartsStudents = {
-                new Hogwarts("Harry Potter", "Griffindor", 88, 89),
+                new Hogwarts("Harry Potter", "Griffindor", 95, 89),
                 new Hogwarts("Hermione Granger", "Griffindor", 99, 99),
                 new Hogwarts("Ron Weasley", "Griffindor", 77, 78),
                 new Hogwarts("Draco Malfoy", "Slytherin", 87, 80),
@@ -15,9 +15,9 @@ public class Main {
                 new Hogwarts("Marcus Belby", "Ravenclaw", 71, 68)
         };
         Griffindor[] griffindorStudents = {
-                new Griffindor("Harry Potter", "Griffindor", 88, 89, 92, 100, 100),
+                new Griffindor("Harry Potter", "Griffindor", 95, 89, 92, 100, 100),
                 new Griffindor("Hermione Granger", "Griffindor", 99, 99, 95, 95, 92),
-                new Griffindor("Ron Weasley", "Griffindor", 77, 78, 92, 100, 100)
+                new Griffindor("Ron Weasley", "Griffindor", 77, 78, 94, 97, 100)
         };
         Slytherin[] slytherinStudents = {
                 new Slytherin("Draco Malfoy", "Slytherin", 87, 80, 98, 97, 95, 100),
@@ -34,5 +34,10 @@ public class Main {
                 new Ravenclaw("Padma Patil", "Ravenclaw", 80, 77, 94, 96, 91, 91),
                 new Ravenclaw("Marcus Belby", "Ravenclaw", 71, 68, 89, 98, 100, 90)
         };
+        PrintService printService = new PrintService();
+        printService.print(griffindorStudents);
+        printService.print(slytherinStudents);
+        printService.print(hufflepuffStudents);
+        printService.print(ravenclawStudents);
     }
 }
