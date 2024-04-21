@@ -1,6 +1,6 @@
 public class Hogwarts {
-    private String fullName;
-    private String faculty;
+    private final String fullName;
+    private final String faculty;
     private int empower;
     private int transgressionRange;
 
@@ -15,16 +15,8 @@ public class Hogwarts {
         return fullName;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
     public String getFaculty() {
         return faculty;
-    }
-
-    public void setFaculty(String faculty) {
-        this.faculty = faculty;
     }
 
     public int getEmpower() {
