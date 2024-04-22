@@ -1,3 +1,5 @@
+import java.util.concurrent.Callable;
+
 public class Main {
     public static void main(String[] args) {
         Hogwarts[] hogwartsStudents = {
@@ -34,10 +36,17 @@ public class Main {
                 new Ravenclaw("Padma Patil", "Ravenclaw", 80, 77, 94, 96, 91, 91),
                 new Ravenclaw("Marcus Belby", "Ravenclaw", 71, 68, 89, 98, 100, 90)
         };
+
         PrintService printService = new PrintService();
         printService.print(griffindorStudents);
         printService.print(slytherinStudents);
         printService.print(hufflepuffStudents);
         printService.print(ravenclawStudents);
+        HogwartsComparisons.compareGryffindorStudents((Griffindor) griffindorStudents[0], (Griffindor) griffindorStudents[1]);
+        HogwartsComparisons.compareSlytherinStudents((Slytherin) slytherinStudents[0], (Slytherin) slytherinStudents[1]);
+        HogwartsComparisons.compareHufflepuffStudents((Hufflepuff) hufflepuffStudents[0], (Hufflepuff) hufflepuffStudents[1]);
+        HogwartsComparisons.compareRavenclawStudents((Ravenclaw) ravenclawStudents[0], (Ravenclaw) ravenclawStudents[1]);
+        HogwartsComparisons.compareMagicAndTransgression(hogwartsStudents[0], hogwartsStudents[1]);
     }
 }
+
